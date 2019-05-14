@@ -3,6 +3,6 @@ compiler:
   - gcc
   - clang
 before_install:
-  - sudo apt-get update -qq
-  - sudo apt-get install -y libsdl1.2-dev libasound2-dev libpng-dev libz-dev gcc-6-arm-linux-gnueabihf g++-6-arm-linux-gnueabihf
+  - apt-get update -qq
+  - apt-get install -y libsdl1.2-dev libasound2-dev libpng-dev libz-dev gcc-6-arm-linux-gnueabihf g++-6-arm-linux-gnueabihf
 script: make platform=classic_armv8_a35 CC=arm-linux-gnueabihf-gcc-6 CXX=arm-linux-gnueabihf-g++-6
