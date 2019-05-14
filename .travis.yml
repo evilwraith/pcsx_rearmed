@@ -3,6 +3,6 @@ compiler:
   - gcc
   - clang
 before_install:
-  - apt-get update -qq
-  - apt-get install -y libsdl1.2-dev libasound2-dev libpng-dev libz-dev crossbuild-essential-armhf
+  - sudo apt-get update -qq
+  - sudo apt-get install -y libsdl1.2-dev libasound2-dev libpng-dev libz-dev crossbuild-essential-armhf
 script: make platform=classic_armv8_a35 CC=arm-linux-gnueabihf-gcc-6 CXX=arm-linux-gnueabihf-g++-6
