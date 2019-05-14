@@ -2,4 +2,4 @@ language: cpp
 compiler:
   - gcc
   - clang
-script: make arch=arm platform=classic_armv8_a35 CC=arm-linux-gnueabihf-gcc-6 CXX=arm-linux-gnueabihf-g++-6
+script: make arch=arm platform=classic_armv8_a35 CC=arm-linux-gnueabihf-gcc-6 CXX=arm-linux-gnueabihf-g++-6 -f=Makefile.libretro 
